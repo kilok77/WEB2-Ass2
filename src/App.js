@@ -6,17 +6,15 @@ import Navbar from "./comp/Navbar"; // Importing the new Navbar
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen flex flex-col items-center">
-        <Navbar /> {/* Include the stylish Navbar */}
-        <div className="w-full flex justify-center p-6">
-          <Routes>
-            <Route path="/" element={<PokemonPage />} />
-            <Route path="/about" element={<AboutPage />} />
-          </Routes>
-        </div>
+    <div className="min-h-screen flex flex-col items-center">
+      <Navbar /> {/* Include the stylish Navbar */}
+      <div className="w-full flex justify-center p-6">
+        <Routes>
+          <Route path="/" element={<PokemonPage />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
       </div>
-    </Router>
+    </div>
   );
 }
 
